@@ -1,5 +1,9 @@
 ---
 import { siteConfig } from "../config";
+
+const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 ---
 
 <div
@@ -7,6 +11,51 @@ import { siteConfig } from "../config";
   class="relative isolate overflow-hidden bg-white py-24 md:h-screen"
   style={`--accent-color: ${siteConfig.accentColor}`}
 >
+  <!-- Animated gradient background -->
+   <div class="absolute inset-0 -z-10 bg-gradient-animation">
+    <div class="gradient-layer-1"></div>
+    <div class="gradient-layer-2"></div>
+    <div class="gradient-layer-3"></div>
+   </div>
+
+  <!-- Navigation Bar -->
+  <div class="relative z-20 pt-8 px-4 sm:px-8 md:px-12">
+    <div class="max-w-2xl mx-auto">
+      <div class="nav-bar-container">
+        <svg 
+          class="nav-icon" 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="20" 
+          height="20" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M4 6l16 0"></path>
+          <path d="M4 12l16 0"></path>
+          <path d="M4 18l16 0"></path>
+        </svg>
+        <button
+          type="button"
+          id="nav-toggle"
+          class="nav-button"
+        >
+          Navigate <to class=""></to>
+        </button>
+        <div class="nav-dropdown" id="nav-dropdown" style="display: none;">
+          <a href="#about" class="nav-item">About</a>
+          {hasProjects && <a href="#projects" class="nav-item">Projects</a>}
+          {hasExperience && <a href="#experience" class="nav-item">Experience</a>}
+          {hasEducation && <a href="#education" class="nav-item">Education</a>}
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Gradient overlay -->
   <div
     class="absolute inset-0 -z-10"
@@ -207,36 +256,6 @@ import { siteConfig } from "../config";
               <path d="M12 16v-5" />
               <path d="M16 16v-3a2 2 0 1 0 -4 0" />
               <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
-            </>
-          </svg>
-        </a>
-      )
-    }
-    {
-      siteConfig.social?.twitter && (
-        <a
-          href={siteConfig.social.twitter}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter"
-          class="transition-colors duration-300 hover:text-[var(--accent-color)]"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
-          >
-            <>
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
             </>
           </svg>
         </a>
