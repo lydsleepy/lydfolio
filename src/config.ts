@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Lydia Huang",
-  title: "a developer, researcher, and creator.",
+  title: "learn. build. create.",
   description: "Portfolio website of Lydia Huang",
   accentColor: "#F19CBB",
   social: {
@@ -36,55 +36,34 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Lingo Friends",
+      title: "Software Engineer Intern",
+      dateRange: "Oct 2025 - Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Engineered and deployed secure authentication systems with Typescript/React UI components.",
+        "Developed and integrated full-stack features for a React and Expo web application.",
+        "Collaborated with a small, fast-paced startup team using Git and GitHub for version control and web deployment, contributing to efficient development cycles.",
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "TLT - Tomorrow's Leaders Today",
+      title: "Geographic Information Systems (GIS) Intern",
+      dateRange: "May 2025 - July 2025",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Created maps and data visualizations using QGIS, supporting geographic analysis to identify underrepresented youth populations across Texas.",
+        "Collected, aggregated, and cleaned large spactial datasets into CSV format for visualization and collaborative analysis with the data science team.",
+        "Implemented and researched new GIS tools and developed a self-guided GIS training course, later published publicly and shared with future interns to expand organizational knowledge.",
       ],
     },
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "University of Texas at Austin",
+      degree: "B.S.I in Informatics - Data Science",
+      dateRange: "2024 - 2028",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
+        "GPA: 4.0/4.0",
         "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
       ],
     },
   ],
